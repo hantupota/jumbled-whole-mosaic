@@ -48,7 +48,7 @@ const Footer = () => {
               href="https://tiktok.com/@omagna.ink" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-molten-gold hover:text-alabaster transition-colors text-2xl"
+              className="text-molten-gold hover:text-alabaster transition-colors"
             >
               <Tiktok size={32} />
             </a>
