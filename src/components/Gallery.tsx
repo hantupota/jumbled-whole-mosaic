@@ -1,16 +1,35 @@
 
+import { useEffect } from 'react';
+
 const Gallery = () => {
+  useEffect(() => {
+    // Load the Elfsight script
+    const script = document.createElement('script');
+    script.src = 'https://static.elfsight.com/platform/platform.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      // Cleanup script if component unmounts
+      const existingScript = document.querySelector('script[src="https://static.elfsight.com/platform/platform.js"]');
+      if (existingScript) {
+        document.head.removeChild(existingScript);
+      }
+    };
+  }, []);
+
   return (
-    <section className="py-20 px-4 bg-obsidian/50">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="font-cinzel text-4xl text-molten-gold mb-12">THE GALLERY OF LEGENDS</h2>
+    <section className="min-h-screen bg-black py-16 px-4">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-serif text-white text-center mb-12">
+          THE GALLERY OF LEGENDS
+        </h2>
         
-        <div className="bg-obsidian/30 p-8 rounded-lg border border-molten-gold/30">
+        <div className="w-full">
           <div 
-            dangerouslySetInnerHTML={{
-              __html: `<script src="https://static.elfsight.com/platform/platform.js" async></script><div class="elfsight-app-d9a3c1c3-6340-4c1b-a811-622557b9b979" data-elfsight-app-lazy></div>`
-            }}
-          />
+            className="elfsight-app-d9a3c1c3-6340-4c1b-a811-622557b9b979" 
+            data-elfsight-app-lazy
+          ></div>
         </div>
       </div>
     </section>
