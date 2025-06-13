@@ -56,19 +56,19 @@ const AIChat = () => {
                 onClick={() => handlePathSelect('A')}
                 className="w-full max-w-md border border-molten-gold bg-transparent text-molten-gold hover:bg-molten-gold hover:text-obsidian transition-all duration-300 py-4"
               >
-                [ A. I'm Ready to Create a New Legend ]
+                [ I'm Ready to Create a New Legend ]
               </Button>
               <Button
                 onClick={() => handlePathSelect('B')}
                 className="w-full max-w-md border border-molten-gold bg-transparent text-molten-gold hover:bg-molten-gold hover:text-obsidian transition-all duration-300 py-4"
               >
-                [ B. This is My First Step... I Need Guidance ]
+                [ This is My First Step... I Need Guidance ]
               </Button>
               <Button
                 onClick={() => handlePathSelect('C')}
                 className="w-full max-w-md border border-molten-gold bg-transparent text-molten-gold hover:bg-molten-gold hover:text-obsidian transition-all duration-300 py-4"
               >
-                [ C. I Wish to Rewrite an Old Story ]
+                [ I Wish to Rewrite an Old Story ]
               </Button>
             </div>
           </div>
@@ -78,7 +78,7 @@ const AIChat = () => {
         return (
           <div className="text-center space-y-6">
             <p className="text-xl text-alabaster">
-              A legend must know what they wish to destroy and what they must awaken. Let the ritual begin... What part of your old self will you DESTROY? (One Word)
+              A legend must know what they wish to destroy and what they must awaken. Let the ritual begin. What part of your old self will you DESTROY? (One Word Only)
             </p>
             <div className="max-w-md mx-auto flex gap-4">
               <Input
@@ -99,7 +99,7 @@ const AIChat = () => {
         return (
           <div className="text-center space-y-6">
             <p className="text-xl text-alabaster">
-              What power will you AWAKEN? (One Word)
+              What power will you AWAKEN? (One Word Only)
             </p>
             <div className="max-w-md mx-auto flex gap-4">
               <Input
@@ -120,7 +120,7 @@ const AIChat = () => {
         return (
           <div className="text-center space-y-6">
             <p className="text-xl text-alabaster">
-              Name one SYMBOL that represents this power.
+              And finally, name the SYMBOL that represents this power.
             </p>
             <div className="max-w-md mx-auto flex gap-4">
               <Input
@@ -141,10 +141,10 @@ const AIChat = () => {
         return (
           <div className="text-center space-y-6">
             <p className="text-xl text-alabaster">
-              The first step is the most sacred. Fear is natural. Let us turn it into courage. Answer these questions to build your blueprint... If your life were a movie, what genre would it be?
+              The first step is the most sacred. Fear is natural. Let us turn it into courage. First, tell me, if your life were a story, what genre would it be?
             </p>
             <div className="space-y-4">
-              {['Action', 'Drama', 'Fantasy'].map((genre) => (
+              {['Adventure', 'Mystery', 'Drama'].map((genre) => (
                 <Button
                   key={genre}
                   onClick={() => {
@@ -164,7 +164,7 @@ const AIChat = () => {
         return (
           <div className="text-center space-y-6">
             <p className="text-xl text-alabaster">
-              Choose an element that calls to you:
+              Interesting. Now, choose an element that calls to you:
             </p>
             <div className="space-y-4">
               {['Fire', 'Water', 'Earth', 'Air'].map((element) => (
@@ -187,7 +187,7 @@ const AIChat = () => {
         return (
           <div className="text-center space-y-6">
             <p className="text-xl text-alabaster">
-              Rewriting the past is the highest form of art. We honor your trust. Tell us not about your old tattoo, but about the *new story* you wish to begin.
+              Rewriting the past is the highest form of art. We honor your trust. Tell us not about the old mark, but about the new story you wish to begin.
             </p>
             <div className="max-w-md mx-auto flex gap-4">
               <Input
@@ -208,7 +208,7 @@ const AIChat = () => {
         return (
           <div className="text-center space-y-6">
             <p className="text-xl text-alabaster">
-              What is the core energy of this new story? (e.g., 'Freedom', 'Strength', 'Peace')
+              What is the core energy of this new story? (e.g., 'Freedom', 'Growth', 'Peace')
             </p>
             <div className="max-w-md mx-auto flex gap-4">
               <Input

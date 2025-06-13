@@ -27,6 +27,7 @@ export default {
 				'obsidian': '#121212',
 				'alabaster': '#F3EFE0',
 				'molten-gold': '#D4AF37',
+				'bloodstone-red': '#8A0707',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

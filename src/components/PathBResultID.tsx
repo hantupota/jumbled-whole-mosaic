@@ -1,4 +1,6 @@
 
+import TrustSectionID from './TrustSectionID';
+
 interface PathBResultIDProps {
   answers: string[];
 }
@@ -6,23 +8,6 @@ interface PathBResultIDProps {
 const PathBResultID = ({ answers }: PathBResultIDProps) => {
   const [genre, element] = answers;
   
-  const getProfile = (genre: string, element: string) => {
-    if (genre === 'Aksi' && element === 'Api') return 'Pejuang Berani';
-    if (genre === 'Drama' && element === 'Air') return 'Pencerita Emosional';
-    if (genre === 'Fantasi' && element === 'Tanah') return 'Mistikus Membumi';
-    return 'Visioner Pragmatis';
-  };
-
-  const getStyles = (element: string) => {
-    switch (element) {
-      case 'Api': return 'Geometris atau Tradisional Tebal';
-      case 'Air': return 'Cat Air atau Organik Mengalir';
-      case 'Tanah': return 'Blackwork atau Dotwork';
-      case 'Udara': return 'Garis Halus atau Minimalis';
-      default: return 'Geometris atau Blackwork';
-    }
-  };
-
   const artists = [
     { name: 'Cuyo Ink', image: 'https://omagna.ink/wp-content/uploads/2025/03/cuyo-Artists-800x1000-1.webp' },
     { name: 'Magna Bucu', image: 'https://omagna.ink/wp-content/uploads/2025/03/bucu-Artists-800x1000-1.webp' },
@@ -37,18 +22,17 @@ const PathBResultID = ({ answers }: PathBResultIDProps) => {
         
         <div className="text-left space-y-6 text-alabaster">
           <div>
-            <h3 className="text-molten-gold text-xl font-bold mb-2">Profil Jiwa Artistik:</h3>
-            <p className="text-lg">{getProfile(genre, element)}</p>
+            <h3 className="text-molten-gold text-xl font-bold mb-2">Jiwa Artistik Anda:</h3>
+            <p className="text-lg">Penjelajah Metodis</p>
           </div>
           
           <div>
-            <h3 className="text-molten-gold text-xl font-bold mb-2">Gaya yang Direkomendasikan:</h3>
-            <p className="text-lg">Jiwa Anda beresonansi dengan <em className="text-molten-gold">{getStyles(element)}</em>.</p>
+            <p className="text-lg">Jawaban Anda menunjukkan jiwa yang menghargai makna dan struktur. Gaya terbaik untuk Anda adalah yang memiliki garis bersih dan simbolisme mendalam, seperti <em className="text-molten-gold">Geometris</em>, <em className="text-molten-gold">Blackwork</em>, atau <em className="text-molten-gold">Geometri Suci</em>. Gaya-gaya ini menawarkan kekuatan abadi.</p>
           </div>
           
           <div>
-            <h3 className="text-molten-gold text-xl font-bold mb-2">Peta Rasa Sakit (Contoh):</h3>
-            <p className="text-lg">Lengan: 3/10 (Rendah). Rusuk: 8/10 (Tinggi). Kami akan memandu Anda.</p>
+            <h3 className="text-molten-gold text-xl font-bold mb-2">Peta Rasa Sakit:</h3>
+            <p className="text-lg">Untuk pengalaman pertama, kami merekomendasikan lengan bawah (Rasa Sakit: 3/10) atau betis (Rasa Sakit: 4/10). Kami akan memandu Anda melalui setiap langkah dengan nyaman.</p>
           </div>
           
           <div>
@@ -74,16 +58,7 @@ const PathBResultID = ({ answers }: PathBResultIDProps) => {
         </div>
       </div>
       
-      <div className="mt-12 p-6 bg-obsidian/50 border border-molten-gold/50 rounded-lg">
-        <h3 className="font-cinzel text-2xl text-molten-gold mb-4">Sumpah Suci Kami</h3>
-        <p className="text-alabaster text-lg mb-6">
-          Jalur mana pun yang Anda tempuh, semua perjalanan di Omagna terikat oleh satu sumpah: 
-          <em className="text-molten-gold"> Persetujuan adalah Utama, Keamanan adalah Mutlak, dan Rasa Hormat adalah Tanpa Syarat</em>.
-        </p>
-        <button className="border border-molten-gold text-molten-gold px-6 py-3 rounded hover:bg-molten-gold hover:text-obsidian transition-all duration-300">
-          [ Baca Deklarasi Etika Lengkap Kami ]
-        </button>
-      </div>
+      <TrustSectionID />
     </div>
   );
 };

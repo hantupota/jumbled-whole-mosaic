@@ -1,4 +1,6 @@
 
+import TrustSection from './TrustSection';
+
 interface PathBResultProps {
   answers: string[];
 }
@@ -6,23 +8,6 @@ interface PathBResultProps {
 const PathBResult = ({ answers }: PathBResultProps) => {
   const [genre, element] = answers;
   
-  const getProfile = (genre: string, element: string) => {
-    if (genre === 'Action' && element === 'Fire') return 'The Bold Warrior';
-    if (genre === 'Drama' && element === 'Water') return 'The Emotional Storyteller';
-    if (genre === 'Fantasy' && element === 'Earth') return 'The Grounded Mystic';
-    return 'The Pragmatic Visionary';
-  };
-
-  const getStyles = (element: string) => {
-    switch (element) {
-      case 'Fire': return 'Geometric or Bold Traditional';
-      case 'Water': return 'Watercolor or Flowing Organic';
-      case 'Earth': return 'Blackwork or Dotwork';
-      case 'Air': return 'Fine Line or Minimalist';
-      default: return 'Geometric or Blackwork';
-    }
-  };
-
   const artists = [
     { name: 'Cuyo Ink', image: 'https://omagna.ink/wp-content/uploads/2025/03/cuyo-Artists-800x1000-1.webp' },
     { name: 'Magna Bucu', image: 'https://omagna.ink/wp-content/uploads/2025/03/bucu-Artists-800x1000-1.webp' },
@@ -37,18 +22,17 @@ const PathBResult = ({ answers }: PathBResultProps) => {
         
         <div className="text-left space-y-6 text-alabaster">
           <div>
-            <h3 className="text-molten-gold text-xl font-bold mb-2">Artistic Soul Profile:</h3>
-            <p className="text-lg">{getProfile(genre, element)}</p>
+            <h3 className="text-molten-gold text-xl font-bold mb-2">Your Artistic Soul:</h3>
+            <p className="text-lg">The Methodical Explorer</p>
           </div>
           
           <div>
-            <h3 className="text-molten-gold text-xl font-bold mb-2">Recommended Styles:</h3>
-            <p className="text-lg">Your soul resonates with <em className="text-molten-gold">{getStyles(element)}</em>.</p>
+            <p className="text-lg">Your answers suggest a soul that values both meaning and structure. The best styles for you are those with clean lines and deep symbolism, such as <em className="text-molten-gold">Geometric</em>, <em className="text-molten-gold">Blackwork</em>, or <em className="text-molten-gold">Sacred Geometry</em>. These styles offer timeless power.</p>
           </div>
           
           <div>
-            <h3 className="text-molten-gold text-xl font-bold mb-2">Pain Map (Example):</h3>
-            <p className="text-lg">Forearm: 3/10 (Low). Ribs: 8/10 (High). We'll guide you.</p>
+            <h3 className="text-molten-gold text-xl font-bold mb-2">Pain Map:</h3>
+            <p className="text-lg">For a first experience, we recommend the forearm (Pain: 3/10) or calf (Pain: 4/10). We will guide you through every step comfortably.</p>
           </div>
           
           <div>
@@ -74,16 +58,7 @@ const PathBResult = ({ answers }: PathBResultProps) => {
         </div>
       </div>
       
-      <div className="mt-12 p-6 bg-obsidian/50 border border-molten-gold/50 rounded-lg">
-        <h3 className="font-cinzel text-2xl text-molten-gold mb-4">Our Sacred Vow</h3>
-        <p className="text-alabaster text-lg mb-6">
-          Whichever path you walk, all journeys at Omagna are bound by one vow: 
-          <em className="text-molten-gold"> Consent is Paramount, Safety is Absolute, and Respect is Unconditional</em>.
-        </p>
-        <button className="border border-molten-gold text-molten-gold px-6 py-3 rounded hover:bg-molten-gold hover:text-obsidian transition-all duration-300">
-          [ Read Our Full Declaration of Ethics ]
-        </button>
-      </div>
+      <TrustSection />
     </div>
   );
 };

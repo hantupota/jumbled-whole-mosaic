@@ -1,4 +1,6 @@
 
+import TrustSection from './TrustSection';
+
 interface PathCResultProps {
   answers: string[];
 }
@@ -13,13 +15,8 @@ const PathCResult = ({ answers }: PathCResultProps) => {
         
         <div className="text-left space-y-6 text-alabaster">
           <div>
-            <h3 className="text-molten-gold text-xl font-bold mb-2">Transformation Analysis:</h3>
-            <p className="text-lg">From 'A Mark of Regret' to 'A Symbol of <span className="text-molten-gold">{coreEnergy}</span>'.</p>
-          </div>
-          
-          <div>
-            <h3 className="text-molten-gold text-xl font-bold mb-2">Artistic Direction:</h3>
-            <p className="text-lg">We recommend a dynamic style like <em className="text-molten-gold">Japanese Irezumi</em> to flow over the old lines and transform your vision into reality.</p>
+            <h3 className="text-molten-gold text-xl font-bold mb-2">From a Faded Memory to a Bold Future:</h3>
+            <p className="text-lg">Your desire for '{coreEnergy}' calls for a design that flows and breathes. We recommend a dynamic style like <em className="text-molten-gold">Japanese Irezumi</em> to use the old lines as a guide for new movement, or a vibrant <em className="text-molten-gold">Neotraditional</em> piece to completely redefine the area with bold color and life.</p>
           </div>
           
           <div>
@@ -29,6 +26,7 @@ const PathCResult = ({ answers }: PathCResultProps) => {
           
           <div>
             <h3 className="text-molten-gold text-xl font-bold mb-2">Proof of Concept:</h3>
+            <p className="text-lg mb-4">We are specialists in transformation. Here is how we turned a past story into a new masterpiece.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
               <div className="text-center">
                 <img
@@ -51,21 +49,12 @@ const PathCResult = ({ answers }: PathCResultProps) => {
           
           <div>
             <h3 className="text-molten-gold text-xl font-bold mb-2">Process Guarantee:</h3>
-            <p className="text-lg">Every resurrection project is a deep collaboration. We guarantee transparency from the first sketch to the final touch.</p>
+            <p className="text-lg">Every resurrection is a deep collaboration. We guarantee transparency from the first sketch to the final touch.</p>
           </div>
         </div>
       </div>
       
-      <div className="mt-12 p-6 bg-obsidian/50 border border-molten-gold/50 rounded-lg">
-        <h3 className="font-cinzel text-2xl text-molten-gold mb-4">Our Sacred Vow</h3>
-        <p className="text-alabaster text-lg mb-6">
-          Whichever path you walk, all journeys at Omagna are bound by one vow: 
-          <em className="text-molten-gold"> Consent is Paramount, Safety is Absolute, and Respect is Unconditional</em>.
-        </p>
-        <button className="border border-molten-gold text-molten-gold px-6 py-3 rounded hover:bg-molten-gold hover:text-obsidian transition-all duration-300">
-          [ Read Our Full Declaration of Ethics ]
-        </button>
-      </div>
+      <TrustSection />
     </div>
   );
 };

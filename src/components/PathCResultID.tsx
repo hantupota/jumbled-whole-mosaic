@@ -1,4 +1,6 @@
 
+import TrustSectionID from './TrustSectionID';
+
 interface PathCResultIDProps {
   answers: string[];
 }
@@ -13,13 +15,8 @@ const PathCResultID = ({ answers }: PathCResultIDProps) => {
         
         <div className="text-left space-y-6 text-alabaster">
           <div>
-            <h3 className="text-molten-gold text-xl font-bold mb-2">Analisis Transformasi:</h3>
-            <p className="text-lg">Dari 'Tanda Penyesalan' menjadi 'Simbol <span className="text-molten-gold">{coreEnergy}</span>'.</p>
-          </div>
-          
-          <div>
-            <h3 className="text-molten-gold text-xl font-bold mb-2">Arah Artistik:</h3>
-            <p className="text-lg">Kami merekomendasikan gaya dinamis seperti <em className="text-molten-gold">Irezumi Jepang</em> untuk mengalir di atas garis lama dan mengubah visi Anda menjadi kenyataan.</p>
+            <h3 className="text-molten-gold text-xl font-bold mb-2">Dari Kenangan yang Pudar ke Masa Depan yang Berani:</h3>
+            <p className="text-lg">Keinginan Anda untuk '{coreEnergy}' membutuhkan desain yang mengalir dan bernapas. Kami merekomendasikan gaya dinamis seperti <em className="text-molten-gold">Irezumi Jepang</em> untuk menggunakan garis lama sebagai panduan gerakan baru, atau karya <em className="text-molten-gold">Neotraditional</em> yang penuh warna untuk sepenuhnya mendefinisikan ulang area dengan warna dan kehidupan yang berani.</p>
           </div>
           
           <div>
@@ -29,6 +26,7 @@ const PathCResultID = ({ answers }: PathCResultIDProps) => {
           
           <div>
             <h3 className="text-molten-gold text-xl font-bold mb-2">Bukti Konsep:</h3>
+            <p className="text-lg mb-4">Kami adalah spesialis dalam transformasi. Inilah bagaimana kami mengubah cerita masa lalu menjadi karya agung baru.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
               <div className="text-center">
                 <img
@@ -51,21 +49,12 @@ const PathCResultID = ({ answers }: PathCResultIDProps) => {
           
           <div>
             <h3 className="text-molten-gold text-xl font-bold mb-2">Jaminan Proses:</h3>
-            <p className="text-lg">Setiap proyek kebangkitan adalah kolaborasi mendalam. Kami menjamin transparansi dari sketsa pertama hingga sentuhan terakhir.</p>
+            <p className="text-lg">Setiap kebangkitan adalah kolaborasi mendalam. Kami menjamin transparansi dari sketsa pertama hingga sentuhan terakhir.</p>
           </div>
         </div>
       </div>
       
-      <div className="mt-12 p-6 bg-obsidian/50 border border-molten-gold/50 rounded-lg">
-        <h3 className="font-cinzel text-2xl text-molten-gold mb-4">Sumpah Suci Kami</h3>
-        <p className="text-alabaster text-lg mb-6">
-          Jalur mana pun yang Anda tempuh, semua perjalanan di Omagna terikat oleh satu sumpah: 
-          <em className="text-molten-gold"> Persetujuan adalah Utama, Keamanan adalah Mutlak, dan Rasa Hormat adalah Tanpa Syarat</em>.
-        </p>
-        <button className="border border-molten-gold text-molten-gold px-6 py-3 rounded hover:bg-molten-gold hover:text-obsidian transition-all duration-300">
-          [ Baca Deklarasi Etika Lengkap Kami ]
-        </button>
-      </div>
+      <TrustSectionID />
     </div>
   );
 };

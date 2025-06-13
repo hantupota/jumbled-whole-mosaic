@@ -55,19 +55,19 @@ const AIChatID = () => {
                 onClick={() => handlePathSelect('A')}
                 className="w-full max-w-md border border-molten-gold bg-transparent text-molten-gold hover:bg-molten-gold hover:text-obsidian transition-all duration-300 py-4"
               >
-                [ A. Saya Siap Menciptakan Legenda Baru ]
+                [ Saya Siap Menciptakan Legenda Baru ]
               </Button>
               <Button
                 onClick={() => handlePathSelect('B')}
                 className="w-full max-w-md border border-molten-gold bg-transparent text-molten-gold hover:bg-molten-gold hover:text-obsidian transition-all duration-300 py-4"
               >
-                [ B. Ini Langkah Pertama Saya... Saya Butuh Panduan ]
+                [ Ini Langkah Pertama Saya... Saya Butuh Panduan ]
               </Button>
               <Button
                 onClick={() => handlePathSelect('C')}
                 className="w-full max-w-md border border-molten-gold bg-transparent text-molten-gold hover:bg-molten-gold hover:text-obsidian transition-all duration-300 py-4"
               >
-                [ C. Saya Ingin Menulis Ulang Cerita Lama ]
+                [ Saya Ingin Menulis Ulang Cerita Lama ]
               </Button>
             </div>
           </div>
@@ -77,7 +77,7 @@ const AIChatID = () => {
         return (
           <div className="text-center space-y-6">
             <p className="text-xl text-alabaster">
-              Seorang legenda harus tahu apa yang ingin mereka hancurkan dan apa yang harus mereka bangkitkan. Mari ritual dimulai... Bagian apa dari diri lama Anda yang akan Anda HANCURKAN? (Satu Kata)
+              Seorang legenda harus tahu apa yang ingin mereka hancurkan dan apa yang harus mereka bangkitkan. Mari ritual dimulai. Bagian apa dari diri lama Anda yang akan Anda HANCURKAN? (Satu Kata Saja)
             </p>
             <div className="max-w-md mx-auto flex gap-4">
               <Input
@@ -98,7 +98,7 @@ const AIChatID = () => {
         return (
           <div className="text-center space-y-6">
             <p className="text-xl text-alabaster">
-              Kekuatan apa yang akan Anda BANGKITKAN? (Satu Kata)
+              Kekuatan apa yang akan Anda BANGKITKAN? (Satu Kata Saja)
             </p>
             <div className="max-w-md mx-auto flex gap-4">
               <Input
@@ -119,7 +119,7 @@ const AIChatID = () => {
         return (
           <div className="text-center space-y-6">
             <p className="text-xl text-alabaster">
-              Sebutkan satu SIMBOL yang mewakili kekuatan ini.
+              Dan akhirnya, sebutkan SIMBOL yang mewakili kekuatan ini.
             </p>
             <div className="max-w-md mx-auto flex gap-4">
               <Input
@@ -140,10 +140,10 @@ const AIChatID = () => {
         return (
           <div className="text-center space-y-6">
             <p className="text-xl text-alabaster">
-              Langkah pertama adalah yang paling suci. Takut itu wajar. Mari kita ubah menjadi keberanian. Jawab pertanyaan ini untuk membangun blueprint Anda... Jika hidup Anda adalah film, genre apa yang akan dipilih?
+              Langkah pertama adalah yang paling suci. Takut itu wajar. Mari kita ubah menjadi keberanian. Pertama, ceritakan padaku, jika hidup Anda adalah sebuah cerita, genre apa yang akan dipilih?
             </p>
             <div className="space-y-4">
-              {['Aksi', 'Drama', 'Fantasi'].map((genre) => (
+              {['Petualangan', 'Misteri', 'Drama'].map((genre) => (
                 <Button
                   key={genre}
                   onClick={() => {
@@ -163,7 +163,7 @@ const AIChatID = () => {
         return (
           <div className="text-center space-y-6">
             <p className="text-xl text-alabaster">
-              Pilih elemen yang memanggil Anda:
+              Menarik. Sekarang, pilih elemen yang memanggil Anda:
             </p>
             <div className="space-y-4">
               {['Api', 'Air', 'Tanah', 'Udara'].map((element) => (
@@ -186,7 +186,7 @@ const AIChatID = () => {
         return (
           <div className="text-center space-y-6">
             <p className="text-xl text-alabaster">
-              Menulis ulang masa lalu adalah bentuk seni tertinggi. Kami menghormati kepercayaan Anda. Ceritakan bukan tentang tato lama Anda, tetapi tentang *cerita baru* yang ingin Anda mulai.
+              Menulis ulang masa lalu adalah bentuk seni tertinggi. Kami menghormati kepercayaan Anda. Ceritakan bukan tentang tanda lama, tetapi tentang cerita baru yang ingin Anda mulai.
             </p>
             <div className="max-w-md mx-auto flex gap-4">
               <Input
@@ -207,7 +207,7 @@ const AIChatID = () => {
         return (
           <div className="text-center space-y-6">
             <p className="text-xl text-alabaster">
-              Apa energi inti dari cerita baru ini? (mis., 'Kebebasan', 'Kekuatan', 'Kedamaian')
+              Apa energi inti dari cerita baru ini? (mis., 'Kebebasan', 'Pertumbuhan', 'Kedamaian')
             </p>
             <div className="max-w-md mx-auto flex gap-4">
               <Input
