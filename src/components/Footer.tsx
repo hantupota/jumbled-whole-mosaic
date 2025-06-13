@@ -12,10 +12,10 @@ const Footer = () => {
             <div>
               <h3 className="text-molten-gold text-xl font-bold mb-4">📍 OMAGNA INK JAKARTA 🇮🇩</h3>
               <div className="space-y-2">
-                <a href="tel:+6285921896058" className="block text-alabaster hover:text-molten-gold transition-colors">
+                <a href="https://api.whatsapp.com/send?phone=6285921896058" className="block text-alabaster hover:text-molten-gold transition-colors">
                   +6285921896058
                 </a>
-                <a href="tel:+6287772563170" className="block text-alabaster hover:text-molten-gold transition-colors">
+                <a href="https://api.whatsapp.com/send?phone=6287772563170" className="block text-alabaster hover:text-molten-gold transition-colors">
                   +6287772563170
                 </a>
               </div>
@@ -24,7 +24,7 @@ const Footer = () => {
             <div>
               <h3 className="text-molten-gold text-xl font-bold mb-4">📍 OMAGNA INK SIHANOUKVILLE 🇰🇭</h3>
               <div className="space-y-2">
-                <a href="tel:+85592376291" className="block text-alabaster hover:text-molten-gold transition-colors">
+                <a href="https://api.whatsapp.com/send?phone=85592376291" className="block text-alabaster hover:text-molten-gold transition-colors">
                   +85592376291
                 </a>
               </div>
@@ -33,10 +33,10 @@ const Footer = () => {
             <div>
               <h3 className="text-molten-gold text-xl font-bold mb-4">📍 OMAGNA INK POIPET 🇰🇭</h3>
               <div className="space-y-2">
-                <a href="tel:+85581238043" className="block text-alabaster hover:text-molten-gold transition-colors">
+                <a href="https://api.whatsapp.com/send?phone=85581238043" className="block text-alabaster hover:text-molten-gold transition-colors">
                   +85581238043
                 </a>
-                <a href="tel:+85561741946" className="block text-alabaster hover:text-molten-gold transition-colors">
+                <a href="https://api.whatsapp.com/send?phone=85561741946" className="block text-alabaster hover:text-molten-gold transition-colors">
                   +85561741946
                 </a>
               </div>
