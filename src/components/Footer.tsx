@@ -50,7 +50,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-molten-gold hover:text-alabaster transition-colors text-2xl"
             >
-              TikTok
+              <Tiktok size={32} />
             </a>
             <a 
               href="https://instagram.com/omagna.ink" 
