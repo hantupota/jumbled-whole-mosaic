@@ -27,7 +27,7 @@ const HeroSectionID = ({ onEnter }: HeroSectionIDProps) => {
         {/* Logo */}
         <div className="mb-8">
           <img
-            src="https://github.com/hantupota/jumbled-whole-mosaic/raw/refs/heads/main/omagnaink-logo2025.png"
+            src="https://raw.githubusercontent.com/hantupota/jumbled-whole-mosaic-versiok/refs/heads/main/omagnaink-logo2025-transparant.png"
             alt="Omagna Ink Studio"
             className="mx-auto h-32 md:h-48 filter brightness-0 invert"
           />
